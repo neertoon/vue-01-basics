@@ -1,8 +1,8 @@
 const app = Vue.createApp({
     data() { //zawsze funkcja
         return { //zawsze obiekt
-            courseGoalA: 'Finish the course and learn EVERYTHING!',
-            courseGoalB: 'Master VUE i zostań FrontEnd nińdzia',
+            courseGoalA: '<h3>Finish the course and learn EVERYTHING!</h3>',
+            courseGoalB: '<h3>Master VUE i zostań FrontEnd nińdzia</h3>',
             vueLink: 'https://vuejs.org/'
         };
     },
