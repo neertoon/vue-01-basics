@@ -1,7 +1,8 @@
 const app = Vue.createApp({
     data() { //zawsze funkcja
         return { //zawsze obiekt
-            courseGoal: 'Finish the course and learn EVERYTHING!',
+            courseGoalA: 'Finish the course and learn EVERYTHING!',
+            courseGoalB: 'Master VUE i zostań FrontEnd nińdzia',
             vueLink: 'https://vuejs.org/'
         };
     },
@@ -9,9 +10,9 @@ const app = Vue.createApp({
         outputGoal() {
             const randomNumber = Math.random();
             if (randomNumber < 0.5) {
-                return 'LEarn Vue';
+                return this.courseGoalA; //VUE binduje this z danymi
             } else {
-                return 'Ale master VUE';
+                return this.courseGoalB;
             }
         }
     }
