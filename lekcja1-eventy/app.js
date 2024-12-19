@@ -3,6 +3,7 @@ const app = Vue.createApp({
     return {
       counter: 0,
       name: '',
+      confirmedName: '',
     };
   },
   methods: {
@@ -14,6 +15,9 @@ const app = Vue.createApp({
     },
     setName(event, nazwisko) {
       this.name =  event.target.value + ' ' + nazwisko;
+    },
+    confirmInput() {
+      this.confirmedName = this.name;
     },
     submitForm(event) {
       alert('yeag')
