@@ -14,6 +14,10 @@ const app = Vue.createApp({
     },
     setName(event, nazwisko) {
       this.name =  event.target.value + ' ' + nazwisko;
+    },
+    submitForm(event) {
+      event.preventDefault();
+      alert('yeag')
     }
   }
 });
