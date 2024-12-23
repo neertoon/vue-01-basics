@@ -21,6 +21,9 @@ const app = Vue.createApp({
     },
     submitForm(event) {
       alert('yeag')
+    },
+    resetInput() {
+      this.name = '';
     }
   }
 });
