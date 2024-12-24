@@ -53,6 +53,12 @@ const app = Vue.createApp({
     //     this.fullname = this.name + ' ' + value;
     //   }
     // }
+
+    counter(value) {
+      if (value > 15) {
+        this.counter = 0;
+      }
+    }
   }
 });
 
